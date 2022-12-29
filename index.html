@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+<meta http-equiv="pragma" content="no-cache"> 
+<meta http-equiv="Cache-Control" content="no-cache, must-revalidate"> 
+<meta http-equiv="expires" content="Wed, 26 Feb 1997 08:21:57 GMT">
+<title>正在进入网站...</title>
+
+
+<link href="static/skin-2019.css" rel="stylesheet" type="text/css">
+<script src="static/jquery.min.js"></script>
+<script src="static/clipboard.min.js"></script>
+</head>
+<body class="w768">
+<div class="img_bg"></div>
+<div class="load">
+	<div class="load_txt">正在进入网站...</div>
+	<div class="load_bg"></div>
+	<div class="loading"></div>
+	<div class="load_number">10</div>
+</div>
+<section class="txts none">
+<div class="box">
+	<div class="fl">
+		<img src="static/logo.png">
+	</div>
+	<div class="fr">
+		<p>抱歉，不支持应用内浏览</p>
+		<p>请右上角选择<i id="ico"></i>中打开</p>
+	</div>
+</div>
+<div class="arrow"></div>
+</section>
+<div class="clearfix"></div>
+<section class="notfoud w768 none">
+<div class="Twave"></div>
+<div class="clearfix"></div>
+<div class="tisp">复制网址到浏览器地址栏打开</div>
+<div class="input">
+	<input id="CopyURL" value="https://ganyu114514.github.io/opening.html/" readonly="readonly">
+</div>
+<div>
+	<a id="btnCopy" data-clipboard-target="#CopyURL">一键复制</a>
+</div>
+<div class="clearfix"></div>
+<div class="tisp">
+	<p class="t2">114514</p>
+</div>
+<div class="clearfix"></div>
+<div class="Bwave"></div>
+</section>
+<script type="text/javascript">
+
+function GetQueryString(name){
+     var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+     var r = window.location.search.substr(1).match(reg);
+     if(r!=null)return  unescape(r[2]); return null;
+}
+var myurl=GetQueryString("f");
+if(myurl !=null && myurl.toString().length>1){
+  var tg='?f='+GetQueryString("f");
+} else {
+var tg='';
+}
+$(function(){
+ $("#CopyURL").val('https://ganyu114514.github.io/opening.html/'+tg);
+	var clipboard = new Clipboard('#btnCopy');
+	clipboard.on('success', function(e) {   
+		setTimeout(function() {
+			alert('复制成功,快去浏览器中粘贴访问吧!')
+		}, 200)
+	});
+	 clipboard.on('error', function(e) {
+		setTimeout(function() {
+			prompt("复制失败了,请长按全选输入框复制吧~", 'https://ganyu114514.github.io/opening.html/'+tg)
+		}, 200)
+	});
+});	
+function loading() {
+	var num = 0;
+	var kg = true;
+	setInterval(function() {
+		if (kg) {
+			if (num == 100) {
+				window.location.href = 'https://ganyu114514.github.io/opening.html/' + tg;
+				kg = false;
+				return false;
+			}
+			$('.load_number').html(num);
+			num++;
+		}
+	}, 30)
+	$('.loading').css('width', '100%')
+};
+$(function(){
+	var u = navigator.userAgent;
+	var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1;
+	if (isAndroid) {
+		$("#ico").addClass("and")
+	} else {
+		$("#ico").addClass("ios")
+	}
+	var ua = navigator.userAgent.toLowerCase();
+    if(ua.indexOf(' qq')>-1 && ua.indexOf('mqqbrowser') <0){
+	   $('.none').css({'opacity':'1'});
+	   $('.img_bg,.load').hide();
+	    return;
+	} else if (ua.match(/MicroMessenger/i) == 'micromessenger') {
+	    $('.none').css({'opacity':'1'});
+		$('.img_bg,.load').hide();
+        return;
+    } else {	
+		loading();
+		return false
+	}
+});
+</script>
+<div style="display:none"></div>
+</body>
+</html>

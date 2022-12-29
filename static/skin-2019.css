@@ -1,0 +1,90 @@
+body{margin:0 auto;max-width:414px;background:#ECECEC;color:#333;font-size:100%}
+a,div,i,p,section{margin:0;padding:0}
+a{color:#333;text-decoration:none}
+a:hover{color:#f66}
+.clearfix:after,.clearfix:before{display:table;content:""}
+.clearfix:after{clear:both;overflow:hidden}
+header{position:relative;width:100%;display:none;margin:0 auto;}
+header a.close{position:absolute;right:10px;bottom:10px;display:block;margin:0 auto;width:26px;height:26px;border-radius:50%;background:#EFEFF4 url(../image/del.png) no-repeat center center;background-size:13px;transition: All 0.4s ease-in-out;-webkit-transition: All 0.4s ease-in-out;-moz-transition: All 0.4s ease-in-out;-o-transition: All 0.4s ease-in-out;border:2px solid #fff;z-index:5;}
+header a.close:hover{transform: rotate(360deg);-webkit-transform: rotate(360deg);-moz-transform: rotate(360deg);-o-transform: rotate(360deg);-ms-transform: rotate(360deg);}
+/* 刀客 源码网 www.dkewl.com */
+.tips{margin:0 auto;width:100%;height:5pc}
+.tips,.tips .box{position:relative;display:block;padding:0}
+.tips .box{overflow:hidden;margin:20px auto 0;width:94%;border:1px solid #fff;border-radius:26px;background:#fb3;box-shadow:0 0 10px 0 rgba(0,0,0,.15)}
+.tips .box .fl{float:left;margin:5px 10px;width:50px;height:50px}
+.tips .box .fl img{display:block;width:100%;border-radius:50%}
+.tips .box .fr{position:absolute;top:0;left:60px;float:left;margin:5px 10px;width:auto;line-height:1.5625rem}
+.tips .box .fr p.t1{color:#fff;font-size:.9em}
+.tips .box .fr p.t2{color:#fafafa;font-size:.7em}
+.txts{width:100%;height:75pt;margin:0 auto 30px;border-top:20px solid #f7f7f7;background:#fff}
+.txts,.txts .box{display:block;padding:0;position:relative}
+.txts .box{width:70%;float:left;border:1px solid #eee;background:#fafafa;margin:20px 0 0 30px;border-radius:6px;overflow:hidden}
+.txts .box .fl{width:50px;height:50px;margin:5px 10px;float:left}
+.txts .box .fl img{width:100%;height:100%;display:block;border-radius:50%}
+.txts .box .fr{width:auto;float:left;line-height:30px;margin:0px 10px;font-size:.8em;position:absolute;top:0;left:60px;padding:0px}
+.txts .box .fr i{width:1pc;height:1pc;padding:2px;display:inline-block;margin:0 5px;border-radius:6px;position:relative;top:5px;}
+.txts .box .fr i.ios{background:#fff url(../image/icon_ios.png) center center no-repeat;background-size:14px 14px;}
+.txts .box .fr i.and{background:#fff url(../image/icon_and.png) center center no-repeat;background-size:14px 14px;}
+.txts .box .fr i.qq{background:#fff url(../image/icon_../image/qq.png) center center no-repeat;background-size:14px 14px;}
+.txts .box .fr i.wx{background:#fff url(../image/icon_wx.png) center center no-repeat;background-size:14px 14px;}
+.txts .box .fr i.more{background:#fff url(../image/icon_more.png) center center no-repeat;background-size:14px 14px;}
+.txts .arrow{-webkit-animation: bounce-down 1.2s linear infinite;animation: bounce-down 1.5s linear infinite;width:90pt;height:90pt;background:url(../image/toparrow.png) right top no-repeat;display:block;background-size:72px 5pc;position:absolute;top:-20px;right:0}
+@keyframes bounce-down{25%{transform:translateY(-5px)}50%,to{transform:translateY(0)}75%{transform:translateY(5px)}}
+.notfoud{display:block;overflow:hidden;margin:20px 5% 50px;padding:0;width:90%;border-right:1px solid #eee;border-left:1px solid #eee;border-radius:4px;background:#fff}
+.notfoud.radius{border:0px;border-radius:6px;box-shadow:0 5px 15px 0 rgba(0,0,0,.1);}
+.notfoud h1{width:100%;margin:0px auto 10px;display:block;text-align:center;background:#ddd;color:#333;font-size:1em;line-height:40px;height:40px;top:0px;right:0px;position:relative;}
+.notfoud .Bwave,.notfoud .Twave{display:block;overflow:hidden;width:100%;height:20px;background:#fff url(../image/Twave.png) repeat-x center top}
+.notfoud .Bwave{background:#fff url(../image/Bwave.png) repeat-x center bottom}
+.notfoud .ewm{display:block;overflow:hidden;margin:0 auto 10px;padding:0}
+.notfoud .ewm,.notfoud .ewm img{width:150px;height:150px}
+.notfoud .ewm.bt1{border-top:1px dashed #ccc;padding-top:10px;width:90%;display:block}
+.notfoud div{display:block;width:100%;text-align:center}
+.notfoud div.tisp{color:#262b31;font-size:.9em;line-height:1.875rem}
+.notfoud div.tisp p{display:block;width:100%;color:#666;text-align:center;font-size:.9em}
+.notfoud div.tisp p.t{padding-bottom:5px;color:#333;font-size:1.1em}
+.notfoud div.tisp p b{color:#f30}
+/* 刀客 源码网 www.dkewl.com */
+.notfoud div.downtis{text-align:center;font-size:.8em;color:#F66}
+.notfoud div.tisp p.t2{border-top:1px dashed #eee;padding-top:10px;}
+.notfoud div.btn{display:block;margin:10px auto 20px;padding:8px 10px;width:100%;text-align:center}
+.notfoud div.btn a{font-size:1em;line-height:1.25rem}
+.notfoud div.btn a span{font-size:.7em;color:#999}
+.notfoud div.link,.notfoud div.url{display:block;margin:10px auto;width:280px;text-align:center}
+.notfoud div.url a{display:inline-block;margin:0 3%;width:94%;height:40px;border-radius:26px;background:#1aad19;color:#333;color:#fff;font-size:1em;line-height:2.5rem;box-shadow: 0 5px 10px 0 rgba(026,173,025,.3);}
+.notfoud div.url a:hover{background:#f66;color:#fff;box-shadow: 0 5px 10px 0 rgba(251,129,129,.5);}
+.notfoud div.link a{float:left;margin:0 5px;width:130px;border:0;background:#fff}
+.notfoud div.input input{width:300px;height:40px;line-height:2.5rem;font-size:1em;border:none;background-color:#eee;border-radius:6px;margin:10px auto;display:block;text-align:center;font-size:.7em}
+.notfoud div.urllink{float:left;margin:10px auto;width:100%;display:block;}
+.notfoud div.urllink li{float:left;margin:7px 5%;width:90%;height:30px;display:block;}
+.notfoud div.urllink li a.link2{float:left;text-align:left;width:70%;display:inline-block;text-indent:40px;line-height:30px;color:#333;font-size:.8em;background: url(../image/icon_link.png)  no-repeat 10px center;background-size:14px 14px;margin-right:1%;overflow:hidden; border:1px solid #eee;border-radius:6px;}
+.notfoud div.urllink li a.link2:hover{background:#3ABFFA url(../image/icon_link.png)  no-repeat 10px center;background-size:14px 14px;border:1px solid #3ABFFA;color:#FFF}
+.notfoud div.urllink li a.link2 i{width:1px;height:16px;border-left:1px solid #ccc;display:inline-block;top:4px;left:-8px;position:relative;overflow:hidden;}
+.notfoud div.urllink li a.link2:hover i{border-left:1px solid #FFF;}
+.notfoud div.urllink li a.link3{float:right;width:25%;text-align:center;display:inline-block;color:#555;line-height:30px;font-size:.7em;border:1px solid #eee;border-radius:6px;overflow:hidden;}
+.notfoud div.urllink li a.link3:hover{background:#3EBB61;border:1px solid #3EBB61;border-radius:6px;color:#FFF}
+.notfoud div.tipsurl {margin:0px auto;width:100%;display:block;color:#999;text-align:center;font-size:12px;line-height:20px;padding:0px}
+.notfoud div #btnCopy{width:5pc;margin:20px auto;line-height:1.25rem;display:block;background:#1aad19;color:#fff;font-size:1em;padding:8px 10px;text-decoration:none;outline:0;border-radius:6px;}
+#btnCopy{cursor:pointer;}
+.notfoud footer{border-top:1px solid #eee;width:100%;margin:20px auto 0px;padding:5PX 0PX;display:block;height:30px;line-height:30px;text-align:center;overflow:hidden;font-size:12px;color:#999;background:#F9F9F9}
+.notfoud footer i,.notfoud footer em,.notfoud footer b{margin:0px 2px;width:20px;height:30px;background:url(../image/s1.png) no-repeat center center;background-size:100% auto;display:inline-block;vertical-align:bottom;}
+.notfoud footer em{background:url(../image/s2.png) no-repeat center center;background-size:100% auto;}
+.notfoud footer b{background:url(../image/icon_ios.png)  no-repeat center center;background-size:14px 14px;}
+body.w768{max-width:8in}
+.notfoud.w768{margin:0 auto 50px;padding:0;width:100%}
+.img_bg,.pic_bg{width:100%;height:100%;position:fixed;top:0;left:0;right:0;bottom:0;z-index:8;margin:auto;background-position:center center;background-repeat:no-repeat;background-image: url(loadbg.jpg);background-size:cover}
+.pic_bg{background-image: url(../image/loadbg2.jpg);}
+.load{width:280px;height:130px;position:fixed;top:0;left:0;right:0;bottom:0;z-index:9;margin:auto;overflow:hidden;}
+.load_txt,.load_number{height:30px;width:100%;margin-bottom:5px;overflow:hidden;text-align:center;}
+.load_bg{width:280px;height:30px;background:#DDD;border-radius:80px;overflow:hidden}
+.loading{width:280px;height:30px;width:0%;margin-top:-30px;background:#1aad19;border-radius:80px;overflow:hidden;transition:all 3s linear;}
+.load_number{margin-top:10px;color:#fe6c00;font-size:20px}
+.load_number:after{content:'%'}
+.none{opacity:0;}
+.qqkf{width:100%;height:100px;display:block;margin:0px auto;padding:0;overflow:hidden;text-align:center;}
+.qqkf a{width:100%;margin:auto;display:block;height:26px;line-height:22px;width:80px;border:1px solid #ccc;border-radius:8px;background:#FAFAFA;box-shadow:0 1px 1px 0 rgba(0,0,0,.15)}
+.qqkf a:hover{box-shadow:0 2px 2px 0 rgba(0,0,0,.2)}
+.qqkf a i{float:left;height:22px;width:24px;display:inline-block;background: url(../image/qq.png) no-repeat right bottom;background-size:20px;}
+.qqkf a.mob{display:block;}
+.qqkf a.pc{display: none;}
+.qqkf span{font-size:12px;color:#333}
+/* 刀客 源码网 www.dkewl.com */
