@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="box">
+        <h2>Login</h2>
+        <div class="input-box">
+            <label>账号</label>
+            <input type="text" id="username"/>
+        </div>
+        <div class="input-box">
+            <label>密码</label>
+            <input type="password" id="password"/>
+        </div>
+        <div class="btn-box">
+            <div>
+                <button onclick="checkLogin()">登录</button>
+            </div>
+        </div>
+    </div>
+
+<script type="text/javascript">
+function checkLogin() {
+    // 预设的正确账号和密码
+    var correctUsername = "114114";
+    var correctPassword = "ganyu";
+
+    // 获取用户输入的账号和密码
+    var username = document.getElementById('username').value;
+    var password = document.getElementById('password').value;
+
+    // 检查账号和密码是否正确
+    if(username === correctUsername && password === correctPassword) {
+        // 账号密码正确，跳转到目标网站
+        window.location.href = "kjoaid.html";
+    } else {
+        // 账号密码错误，弹出提示
+        alert("账号或密码错误！");
+    }
+}
+</script>
+</body>
+</html>

@@ -3,23 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dynamic Ganyu</title>
+    <title>Dynamic Ganyu Trio</title>
     <style>
         body {
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            background-color: #f0f8ff;
+            flex-direction: column; /* 修改为列方向排布 */
+            min-height: 100vh;
+            background-color: #cedeec;
+            margin: 0; /* 移除默认的margin */
+            padding-top: 20px; /* 顶部留出空间 */
+        }
+        header {
+            background-color: #f1a4da; /* 标题背景色 */
+            color: white; /* 标题文字颜色 */
+            padding: 10px 20px;
+            border-radius: 20px; /* 圆角效果 */
+            margin-bottom: 20px; /* 与下方内容的间距 */
+            font-size: 24px; /* 字体大小 */
+        }
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap; /* 允许内容换行 */
+            width: 100%; /* 使内容区域占满宽度 */
+            text-align: center; /* 文字居中 */
         }
         .ganyu-animation {
-            width: 200px;
-            height: 200px;
-            background-image: url('ganyu.gif'); /* 替换 'ganyu.gif' 为甘雨动画GIF的路径 */
+            width: 150px; /* Adjust size to fit the Ganyu images */
+            height: 150px;
             background-size: cover;
             border-radius: 50%;
+            margin: 10px; /* Adds some spacing */
+            cursor: pointer;
+        }
+        .rotate { /* Only apply rotation to elements with this class */
             animation: rotate 10s linear infinite;
-            cursor: pointer; /* 将鼠标样式设置为指针，表示可点击 */
         }
         @keyframes rotate {
             from {
@@ -29,14 +50,39 @@
                 transform: rotate(360deg);
             }
         }
+        .caption {
+            background-color: #f0f0f0; /* 注释背景色 */
+            color: #9062cc; /* 注释文字颜色 */
+            padding: 5px 10px;
+            border-radius: 10px; /* 圆角效果 */
+            margin-top: 10px; /* 与图片的间距 */
+        }
     </style>
 </head>
 <body>
-    <a href="http://yuanshen.com"> <!-- 点击图片时跳转的目标网页 -->
-        <div class="ganyu-animation"></div>
-    </a>
+    <header>若至の网站</header>
+    <div class="content">
+        <div>
+            <a href="http://yuanshen.com">
+                <div class="ganyu-animation rotate" style="background-image: url('ganyu1.gif');"></div>
+            </a>
+            <div class="caption">没活</div>
+        </div>
+        <div>
+            <a href="https://github.com/xiaojieonly/Ehviewer_CN_SXJ/releases/download/1.9.7.6/EhViewer-1.9.7.6.apk">
+                <div class="ganyu-animation" style="background-image: url('ganyu2.gif');"></div>
+            </a>
+            <div class="caption">Eh下载</div>
+        </div>
+        <div>
+            <a href="self/1.html">
+                <div class="ganyu-animation" style="background-image: url('ganyu3.gif');"></div>
+            </a>
+            <div class="caption">自用</div>
+        </div>
+    </div>
     <script>
-        // 如果需要更多交互性，可以在这里添加额外的JavaScript代码
+        // Additional JavaScript for interactivity can be added here
     </script>
 </body>
 </html>
