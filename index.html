@@ -15,10 +15,11 @@
         .ganyu-animation {
             width: 200px;
             height: 200px;
-            background-image: url('ganyu.gif'); /* Replace 'ganyu.gif' with the path to an animated GIF of Ganyu */
+            background-image: url('ganyu.gif'); /* 替换 'ganyu.gif' 为甘雨动画GIF的路径 */
             background-size: cover;
             border-radius: 50%;
             animation: rotate 10s linear infinite;
+            cursor: pointer; /* 将鼠标样式设置为指针，表示可点击 */
         }
         @keyframes rotate {
             from {
@@ -31,9 +32,11 @@
     </style>
 </head>
 <body>
-    <div class="ganyu-animation"></div>
+    <a href="http://yuanshen.com"> <!-- 点击图片时跳转的目标网页 -->
+        <div class="ganyu-animation"></div>
+    </a>
     <script>
-        // Additional JavaScript can go here for more interactivity if required
+        // 如果需要更多交互性，可以在这里添加额外的JavaScript代码
     </script>
 </body>
 </html>
