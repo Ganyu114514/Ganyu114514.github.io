@@ -1,10 +1,39 @@
-<!doctype html>
-<div class="container">
-	<div class="row">
-		<div class="span12">
-			<h1>
-				<em>正在学习网页设计   以前站点Ganyu114514.github.io/dinner.html(复制进入)</em>
-			</h1>
-		</div>
-	</div>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Ganyu</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f8ff;
+        }
+        .ganyu-animation {
+            width: 200px;
+            height: 200px;
+            background-image: url('ganyu.gif'); /* Replace 'ganyu.gif' with the path to an animated GIF of Ganyu */
+            background-size: cover;
+            border-radius: 50%;
+            animation: rotate 10s linear infinite;
+        }
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="ganyu-animation"></div>
+    <script>
+        // Additional JavaScript can go here for more interactivity if required
+    </script>
+</body>
+</html>
